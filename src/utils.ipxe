@@ -108,7 +108,7 @@ goto boot_memdisk
 :boot_memdisk
 imgfree
 kernel ${memdisk} iso raw
-initrd --name ${util_file} http://${util_path}
+initrd --name ${util_file} https://${util_path}
 echo
 echo MD5sums:
 md5sum memdisk ${util_file}
